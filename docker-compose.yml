@@ -26,14 +26,3 @@ services:
           - "3306:3306"
         networks:
           - default
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        environment:
-            PMA_HOST: dob-storage
-            PMA_USER: root
-            PMA_PASSWORD: Exam-2021
-        ports:
-            - "8081:80"
-        restart: always
-        networks:
-            - default
